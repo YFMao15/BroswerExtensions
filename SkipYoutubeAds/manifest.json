@@ -8,7 +8,7 @@
     },
     "permissions": [
       "tabs",
-      "*://*.youtube.com/watch?*"
+      "*://*.youtube.com/watch?v=*"
     ]
   }
   

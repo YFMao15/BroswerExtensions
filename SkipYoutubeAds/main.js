@@ -2,7 +2,7 @@ var tab_list = null;
 
 chrome.tabs.onUpdated.addListener(() => {
     chrome.tabs.query(
-        {url : "*://*.youtube.com/watch?*"},
+        {url : "*://*.youtube.com/watch?v=*"},
         (tabs) => {
             tab_list = tabs;
             if ((tab_list != null) && (tab_list.length > 0)) {
