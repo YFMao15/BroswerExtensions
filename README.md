@@ -1,4 +1,4 @@
 # ChromeExtensions
-Some improvisional workouts on chrome extensions
+Some improvisional workouts on chrome extensions, using Manifest V2
 
-1. SkipYoutubeAds: The extension of skipping youtube advertisements
+1. YoutubeHelper: skip youtube ads
