@@ -7,10 +7,10 @@ if (document.getElementsByClassName('video-ads').length > 0) {
             if (mutation.type === 'childList') {
                 if (document.getElementsByClassName("ytp-ad-skip-button").length > 0) {
                     document.getElementsByClassName("ytp-ad-skip-button")[0].click();
-                    console.log("long-time ads skipped");
+                    console.log("Long-time ads skipped");
                 } else if (document.getElementsByClassName("ytp-ad-overlay-close-button").length > 0) {
                     document.getElementsByClassName("ytp-ad-overlay-close-button")[0].click();
-                    console.log("subtitle ads skipped")
+                    console.log("Subtitle ads skipped")
                 }
             }
         }
