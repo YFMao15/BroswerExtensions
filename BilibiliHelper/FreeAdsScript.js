@@ -20,7 +20,7 @@ if (document.getElementsByClassName("l-con")[0]) {
 if (document.getElementsByClassName("r-con")[0]) {
     var right_column_divs = document.getElementsByClassName("r-con")[0];
     var config = {childList: true};
-    var callback_1 = function(mutations, observer) {
+    var callback = function(mutations, observer) {
         for(var mutation of mutations) {
             if (mutation.type === 'childList') {
                 if (document.getElementsByClassName("ad-report")) {
@@ -29,23 +29,15 @@ if (document.getElementsByClassName("r-con")[0]) {
                         console.log("Video side ads hidden")
                     }
                 }
+                else if (document.getElementById("slide_ad")) {
+                    document.getElementById("slide_ad").style.display = "none";
+                    console.log("Video side ads hidden")
+                }
             }
         }
     }
-    var observer_1 = new MutationObserver(callback_1);
-    observer_1.observe(right_column_divs, config);
-
-    var slide_ad_div = document.getElementById("slide_ad");
-    var callback_2 = function(mutations, observer) {
-        for(var mutation of mutations) {
-            if (mutation.type === 'childList') {
-                slide_ad_div.style.display = "none";
-                console.log("Video side ads hidden")
-            }
-        }
-    }
-    var observer_2 = new MutationObserver(callback_2);
-    observer_2.observe(slide_ad_div, config);
+    var observer = new MutationObserver(callback);
+    observer.observe(right_column_divs, config);
 }
 
 
