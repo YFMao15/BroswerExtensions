@@ -7,7 +7,7 @@ if (document.getElementsByClassName("l-con")[0]) {
                 if (document.getElementsByClassName("ad-report")) {
                     for (var idx = 0; idx < document.getElementsByClassName("ad-report").length; idx ++) {
                         document.getElementsByClassName("ad-report")[idx].style.display = "none";
-                        console.log("Video bottom ads hidden")
+                        console.log("Video bottom ads hidden");
                     }
                 }
             }
@@ -26,12 +26,16 @@ if (document.getElementsByClassName("r-con")[0]) {
                 if (document.getElementsByClassName("ad-report")) {
                     for (var idx = 0; idx < document.getElementsByClassName("ad-report").length; idx ++) {
                         document.getElementsByClassName("ad-report")[idx].style.display = "none";
-                        console.log("Video side ads hidden")
+                        console.log("Video side ads hidden");
                     }
                 }
-                else if (document.getElementById("slide_ad")) {
+                if (document.getElementById("slide_ad")) {
                     document.getElementById("slide_ad").style.display = "none";
-                    console.log("Video side ads hidden")
+                    console.log("Video side ads hidden");
+                }
+                if (document.getElementsByClassName("close-btn")[0]) {
+                    document.getElementsByClassName("close-btn")[0].click();
+                    console.log("Video side ads closed");
                 }
             }
         }
@@ -50,7 +54,7 @@ if (document.getElementsByClassName("proxy-box")[0]) {
                 if (document.getElementsByClassName("banner-card")) {
                     for (var idx = 0; idx < document.getElementsByClassName("banner-card").length; idx ++) {
                         document.getElementsByClassName("banner-card")[idx].style.display = "none";
-                        console.log("Main page banner ads hidden")
+                        console.log("Main page banner ads hidden");
                     }
                 }
             }
