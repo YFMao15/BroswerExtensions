@@ -10,12 +10,17 @@ if (document.getElementsByClassName('video-ads').length > 0) {
                     console.log("Long-time ads skipped");
                 } else if (document.getElementsByClassName("ytp-ad-overlay-close-button").length > 0) {
                     document.getElementsByClassName("ytp-ad-overlay-close-button")[0].click();
-                    console.log("Subtitle ads skipped")
-                }
+                    console.log("Subtitle ads skipped");
+                } 
             }
         }
     };
     
     var observer = new MutationObserver(callback);
     observer.observe(ad_component, config);
+}
+
+if (document.getElementById("player-ads")) {
+    document.getElementById("player-ads").style.display = "none";
+    console.log("Sidebar ads hidden");
 }
