@@ -7,11 +7,15 @@ chrome.tabs.onUpdated.addListener(() => {
             tab_list = tabs;
             if ((tab_list != null) && (tab_list.length > 0)) {
                 for (var i = 0; i < tab_list.length; i ++) {
-                    chrome.tabs.executeScript(
-                        tab_list[i].id,
-                        {file: '/FreeAdsScript.js'});
+                    chrome.scripting.executeScript(
+                        {
+                            target: {tabId: tab_list[i].id},
+                            files: ['/FreeAdsScript.js'],
+                        }
+                    )
                 }
             }
-        })
+        }
+    )
     tab_list = null;
 })

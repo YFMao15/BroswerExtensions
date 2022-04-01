@@ -1,3 +1,5 @@
+// Counter ads in the pages of old version layouts
+
 if (document.getElementsByClassName("l-con")[0]) {
     var left_column_divs = document.getElementsByClassName("l-con")[0];
     var config = {childList: true};
@@ -7,7 +9,7 @@ if (document.getElementsByClassName("l-con")[0]) {
                 if (document.getElementsByClassName("ad-report")) {
                     for (var idx = 0; idx < document.getElementsByClassName("ad-report").length; idx ++) {
                         document.getElementsByClassName("ad-report")[idx].style.display = "none";
-                        console.log("Video bottom ads hidden");
+                        console.log("Bottom video ads hidden");
                     }
                 }
             }
@@ -26,16 +28,16 @@ if (document.getElementsByClassName("r-con")[0]) {
                 if (document.getElementsByClassName("ad-report")) {
                     for (var idx = 0; idx < document.getElementsByClassName("ad-report").length; idx ++) {
                         document.getElementsByClassName("ad-report")[idx].style.display = "none";
-                        console.log("Video side ads hidden");
+                        console.log("Side video ads hidden");
                     }
                 }
                 if (document.getElementById("slide_ad")) {
                     document.getElementById("slide_ad").style.display = "none";
-                    console.log("Video side ads hidden");
+                    console.log("Side video ads hidden");
                 }
                 if (document.getElementsByClassName("close-btn")[0]) {
                     document.getElementsByClassName("close-btn")[0].click();
-                    console.log("Video side ads closed");
+                    console.log("Side video ads closed");
                 }
             }
         }
