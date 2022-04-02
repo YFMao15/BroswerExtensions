@@ -1,6 +1,6 @@
 {
     "name": "BilibiliHelper",
-    "version": "2.0",
+    "version": "2.1",
     "manifest_version": 3,
     "description": "Remove Ads when viewing Bilibili pages (only applying to old version layouts)",
     "background": {

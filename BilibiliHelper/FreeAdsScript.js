@@ -66,6 +66,18 @@ if (document.getElementsByClassName("proxy-box")[0]) {
     observer.observe(category_divs, config);
 }
 
+if (document.getElementsByClassName("proxy-box")[0]) {
+    var category_divs = document.getElementsByClassName("proxy-box")[0];
+    for (var category_div of category_divs.children) {
+        for (var idx = 0; idx < category_div.children.length; idx ++) {
+            if (category_div.children[idx].classList.contains("banner-card")) {
+                category_div.children[idx].style.display = "none";
+                console.log("Main page banner ads hidden");
+            }
+        }
+    }
+}
+
 
 if (document.getElementById('reportFirst2')) {
     var mainpage_promote_ad = document.getElementById('reportFirst2');
