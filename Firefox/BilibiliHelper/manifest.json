@@ -1,0 +1,14 @@
+{
+    "name": "BilibiliHelper",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Remove Ads in Bilibili pages on Firefox (only applying to old version layouts)",
+    "background": {
+      "service_worker": "main.js"
+    },
+    "permissions": [
+      "tabs",
+      "*://*.bilibili.com/*"
+    ]
+  }
+  

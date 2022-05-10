@@ -1,0 +1,17 @@
+{
+    "name": "BilibiliHelper",
+    "version": "2.1",
+    "manifest_version": 3,
+    "description": "Remove Ads in Bilibili pages on Chrome (only applying to old version layouts)",
+    "background": {
+      "service_worker": "main.js"
+    },
+    "permissions": [
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://*.bilibili.com/*"
+    ]
+  }
+  

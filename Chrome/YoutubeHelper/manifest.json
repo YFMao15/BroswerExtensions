@@ -1,0 +1,17 @@
+{
+    "name": "YoutubeHelper",
+    "version": "2.0",
+    "manifest_version": 3,
+    "description": "Remove Ads injected in the youtube videos and webpages on Chrome",
+    "background": {
+      "service_worker": "main.js"
+    },
+    "permissions": [
+      "tabs",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://*.youtube.com/watch?v=*"
+    ]
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "name": "YoutubeHelper",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Remove Ads injected in the youtube videos and webpages on Firefox",
+    "background": {
+      "service_worker": "main.js"
+    },
+    "permissions": [
+      "tabs",
+      "*://*.youtube.com/watch?v=*"
+    ]
+  }
+  
